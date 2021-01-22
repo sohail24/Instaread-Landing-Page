@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Nav Bar Design */
+
+.nav-bar{
+    border-bottom: 1px solid rgb(224, 223, 223);
+}
+
+.container-nav{
+    display: flex;
+    width: 75%;
+    position: relative;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar-logo {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+}
+
+.nav-bar-links{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.link{
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.selected {
+    color: #0275d8 ;
+}
+
+/* Welcome Banner */
+.banner{
+    /* background-color:rgb(248, 245, 245); */
+    background-image: url('../Images/banner.png') ;
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-banner{
+    display: flex;
+    /* background-color:rgb(248, 245, 245); */
+    height: 85vh ;
+    /* align-items: center; */
+    padding-top: 50px;
+    margin: auto;
+    width: 55%;
+}
+
+.left-container, .right-container{
+    flex: 1;
+}
+
+#banner-header{
+    color: rgb(85, 76, 76);
+    font-size: 6vh;
+    font-weight: 600;
+    padding: 7px 0px;
+}
+
+#banner-content {
+    color: rgb(85, 76, 76);
+    font-size: 3vh;
+    padding: 15px 0px;
+}
+
+#btn-instaread{
+    background-color: #0275d8;
+    border-radius: 4px;
+    border-style: none;
+    color: white;
+    padding: 15px 35px;
+    margin-top: 10px;
+    font-size: 2vh;
+    cursor: pointer;
+    /*shadow*/
+    -webkit-box-shadow: 1px 11px 20px 0px rgba(50, 50, 103, 0.39);
+    -moz-box-shadow:    1px 11px 20px 0px rgba(50, 50, 103, 0.39);
+    box-shadow:         1px 11px 20px 0px rgba(50, 50, 103, 0.39);
+}
+
+/*main content - features, categories*/
+.features, .categories-row{
+    display: flex;
+    width: 65%;
+    margin: auto;
+}
+
+.feature-1 , .feature-2 ,.feature-3{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.feature-1 img, .feature-2 img,.feature-3 img{
+    height: 15vh;
+    width: 15vh;
+    font-size: 1vh;
+    padding-bottom: 15px;
+}
+
+.feature-2{
+    border-right: 1px solid rgb(224, 223, 223);
+    border-left: 1px solid rgb(224, 223, 223);
+}
+
+.features h2{
+    margin-bottom: 15px;
+}
+
+hr{
+    width: 65%;
+    margin: auto;
+    border:  1px solid rgb(224, 223, 223) ;
+}
+/*main content - available on screens & main content - books*/
+
+.available-screens-mobile, .available-screens-desktop, .books, .categories-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    font-weight: 400;
+    width: 65%;
+    margin: auto;
+    padding:50px;
+    text-align: center;
+}
+
+.available-screens-mobile img, .available-screens-desktop img, .books-deatils img{
+    height: 80vh;
+    width: 180vh;
+    margin-top: 25px;
+    pointer-events: none;
+}
+
+.available-screens-mobile span, .available-screens-desktop span{
+    font-weight: 700;
+}
+
+/* bottom section of landing page*/
+
+.companies{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(224, 223, 223);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.companies img {
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.get-started{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    padding: 40px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+}
+
+/*Now working on footer*/
+#footer-separater{
+    border: 0.5px solid rgb(224, 223, 223);
+    width: 99.9%;
+}
+
+ footer{
+    display: flex;
+    padding: 80px 150px;
+    height: 400px;
+} 
+
+.footer-info,.footer-link,.footer-connect{
+    flex: 1;
+    padding: 0px 40px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-link{
+    display: flex;
+}
+
+.footer-link div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.footer p, a {
+    color: grey;
+    text-decoration: none;
+}   
+.footer a:hover{
+    text-decoration: underline;
+} 
